@@ -178,15 +178,38 @@ textarea {
 .service-section{
   display: flex;
   text-align: center;
+  flex-direction: column;
   justify-content: center;
-  max-width: 100%;
-
+  max-width: 80%;
+  margin: auto;
 }
+
 .service-section h3{
   color:white;
+  font-size: 70px;
 }
 
 .service-section .service{
-  margin:2px;
-  font-size: 44px;
+  margin:20px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0.3ch;
+  max-width: 300px;
+  height: fit-content;
+  word-wrap: normal;
+  min-height:100px;
+  background-color: rgb(255, 255, 255, 50%);
+  border-radius: 20px;
+  border: rgb(255, 255, 255) 4px solid;
+}
+
+.service-section .services-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service-section .service p{
+  margin: 30px;
 }
