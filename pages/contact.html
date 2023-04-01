@@ -24,23 +24,33 @@
 
 
   <section class="form-section">
-    <p class="title">Send us a Message!</p>
+    <span class="title">
+      Send us a Message!
+    </span>
+    <span class="phone-number-label">
+      Or give us a call at:
+      <a class="phone-number" href="tel:(541) 602-0831">
+        (541) 602-0831
+      </a>
+    </span>
+
+      <form action="https://formsubmit.co/rromig92@gmail.com" method="POST">
+        <!-- <input type="hidden" name="_next" value="https://www.lgutreesandbeyond.com/pages/thank-you.html"/> -->
+        <input type="hidden" name="_next" value="http://www.lgutreesandbeyond.com/pages/thank-you.html" />
+        <input type="hidden" name="_subject" value="New Message from Website!">
+        <!-- next line disable recaptcha -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- this honeypot keeps scrapers from spamming - if this input has data, form will not send -->
+        <input type="text" name="_honey" style="display:none">
+
+        <input name="name" type="text" class="feedback-input" placeholder="Name (required)" required />
+        <input name="number" type="tel" class="feedback-input" placeholder="Phone # (required)" required />
+        <input name="mail" type="email" class="feedback-input" placeholder="Email (optional)" />
+        <textarea name="text" class="feedback-input" placeholder="Comment (required)" required></textarea>
+        <input type="submit" value="SUBMIT" />
+      </form>
   </section>
-  <form action="https://formsubmit.co/rromig92@gmail.com" method="POST">
-    <!-- <input type="hidden" name="_next" value="https://www.lgutreesandbeyond.com/pages/thank-you.html"/> -->
-    <input type="hidden" name="_next" value="http://www.lgutreesandbeyond.com/pages/thank-you.html" />
-    <input type="hidden" name="_subject" value="New Message from Website!">
-    <!-- next line disable recaptcha -->
-    <input type="hidden" name="_captcha" value="false">
-    <!-- this honeypot keeps scrapers from spamming - if this input has data, form will not send -->
-    <input type="text" name="_honey" style="display:none">
-    
-    <input name="name" type="text" class="feedback-input" placeholder="Name (required)" required />
-    <input name="number" type="tel" class="feedback-input" placeholder="Phone # (required)" required />
-    <input name="mail" type="email" class="feedback-input" placeholder="Email (optional)" />
-    <textarea name="text" class="feedback-input" placeholder="Comment (required)" required></textarea>
-    <input type="submit" value="SUBMIT" />
-  </form>
+
 </body>
 
 </html>

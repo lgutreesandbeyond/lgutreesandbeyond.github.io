@@ -62,6 +62,7 @@ main {
 form {
   max-width: 420px;
   margin: 50px auto;
+  margin-top: 10px;
 }
 
 .feedback-input {
@@ -230,14 +231,30 @@ textarea {
 
 .form-section{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
-.form-section p.title{
-  font-size:68px;
+.form-section span.title{
+  font-size:48px;
   margin:28px;
   text-align: center;
 }
-
+.phone-number{
+  font-size: 28px;
+  background-color: rgb(200, 200, 200);
+  border-radius: 10px;
+  padding: 7.5px;
+  text-decoration: none;
+  margin: 10px;
+}
+.phone-number-label{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px; 
+}
 /* about us page */
 
 .about-us-section{
