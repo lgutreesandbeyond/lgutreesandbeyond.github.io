@@ -220,6 +220,6 @@ textarea {
   display: flex;
   justify-content: center;
 }
-.form-section .title{
+.form-section p{
   font-size:68px
 }
