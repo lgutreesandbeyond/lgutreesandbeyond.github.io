@@ -237,3 +237,20 @@ textarea {
   margin:28px;
   text-align: center;
 }
+
+/* about us page */
+
+.about-us-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  text-align: center;
+  margin: 40px;
+  padding: 10px;
+}
+.about-us-title{
+  font-size: 48px;
+  margin: 20px;
+}
