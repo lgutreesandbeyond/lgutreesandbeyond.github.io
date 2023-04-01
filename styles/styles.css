@@ -225,6 +225,7 @@ textarea {
   display: flex;
   justify-content: center;
 }
-.form-section p{
-  font-size:68px
+.form-section p.title{
+  font-size:68px;
+  margin:28px;
 }
