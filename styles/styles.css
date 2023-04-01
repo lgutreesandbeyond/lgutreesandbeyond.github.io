@@ -192,16 +192,21 @@ textarea {
   margin-top: -10px;
 }
 
-.service-section .service{
+.service-section .service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin:20px;
   font-size: 28px;
   font-weight: 500;
   line-height: 44px;
   letter-spacing: 0.3ch;
-  max-width: 300px;
+  min-width: 270px;
+  width: 270px;
+  min-height:148px;
   height: fit-content;
   word-wrap: normal;
-  min-height:100px;
   background-color: rgb(255, 255, 255, 50%);
   border-radius: 20px;
   border: rgb(255, 255, 255) 4px solid;
@@ -217,7 +222,11 @@ textarea {
   margin: 30px;
 }
 
-
+.service-subtext{
+  margin-top: -40px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
 
 .form-section{
   display: flex;
