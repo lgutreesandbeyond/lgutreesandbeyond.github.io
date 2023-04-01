@@ -213,3 +213,13 @@ textarea {
 .service-section .service p{
   margin: 30px;
 }
+
+
+
+.form-section{
+  display: flex;
+  justify-content: center;
+}
+.form-section .title{
+  font-size:68px
+}
