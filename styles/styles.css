@@ -110,6 +110,14 @@ textarea {
 [type="submit"]:hover {
   background: #ff914d;
 }
+.hero-underline {
+  height: 6px;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: rgb(200, 200, 200);
+}
 
 .arrows {
   width: 60px;
