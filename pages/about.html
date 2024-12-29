@@ -1,41 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/styles/styles.css" />
-  <title>About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/about.css">
+    <title>About Us - L. Gu Trees and Beyond</title>
 </head>
-
 <body>
-  <script src="/scripts/hamburger.js"></script>
-  <nav class="topnav" id="navbar">
-    <div id="navbar-links-container">
-      <a href="/index.html">Home</a>
-
-      <a href="/pages/contact.html">Contact</a>
-
-      <a href="/pages/about.html" class="active">About</a>
-
-      <a href="javascript:void(0);" class="icon" onclick="hamburgerDropdown()">&#9776;</a>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">
+            <img src="/assets/lGuLogo.png" alt="L. Gu Trees and Beyond" class="nav-logo">
+        </div>
+        <button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">
+            <span class="hamburger"></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+            <div class="nav-links">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/index.html#services" class="nav-link">Services</a>
+                <a href="/pages/contact.html" class="nav-link">Contact</a>
+                <a href="#" class="nav-link active">About Us</a>
+            </div>
+            <a href="tel:(541) 602-0831" class="nav-cta">
+                  (541) 602-0831
+            </a>
+        </div>
     </div>
-  </nav>
+</nav>
+    <div class="about-hero">
+        <div class="about-hero-content">
+            <h1>About Us</h1>
+            <p class="tagline">Your Trusted Partner in Professional Landscaping</p>
+            <p>L. Gu Trees and Beyond LLC is your number one choice for all your tree pruning, lawn care, power washing and gutter cleaning needs.</p>
+        </div>
+    </div>
 
-  <main class="about-us-container">
-    <section class="about-us-section">
-      <span class="about-us-title"><b>About Us</b></span>
-      <span class="about-us-text">
-        "L. Gu Trees and Beyond LLC is your number one choice for all your tree pruning, lawn care, power washing and
-        gutter cleaning needs. Our services include fruit and ornamental trees and vines pruning, bush and hedge
-        trimming, lawn mowing and edging, weeding, mulching, gutter cleaning, roof cleaning and moss removal, power
-        washing, and beyond. We pride our company on reliability, great communication, integrity, and quality work. We
-        are experts in our trade and will do our best to keep you as educated as we can on your particular task or
-        project. We look forward to earning your business! Feel free to give us a call today!"
-      </span>
+    <section class="about-section">
+        <div class="mission-statement">
+            <h2>What We Do</h2>
+            <p>
+               Our services include fruit and ornamental trees and vines pruning, bush and hedge
+              trimming, lawn mowing and edging, weeding, mulching, gutter cleaning, roof cleaning and moss removal, power
+              washing, and beyond. We pride our company on reliability, great communication, integrity, and quality work. We
+              are experts in our trade and will do our best to keep you as educated as we can on your particular task or
+              project. We look forward to earning your business! Feel free to give us a call today!"
+            </p>
+        </div>
+        <div class="expertise-section">
+          <h2>Our Values</h2>
+      </div>
+        <div class="values-grid">
+            <div class="value-card">
+                <h3>Reliability</h3>
+                <p>Consistent, dependable service you can count on</p>
+            </div>
+            <div class="value-card">
+                <h3>Communication</h3>
+                <p>Clear, transparent dialogue throughout your project</p>
+            </div>
+            <div class="value-card">
+                <h3>Integrity</h3>
+                <p>Honest work and ethical business practices</p>
+            </div>
+            <div class="value-card">
+                <h3>Quality</h3>
+                <p>Excellence in every job, no matter the size</p>
+            </div>
+        </div>
+
+        <div class="expertise-section">
+            <h2>Our Expertise</h2>
+            <p>We are experts in our trade and will do our best to keep you as educated as we can on your particular task or project.</p>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready to Transform Your Space?</h2>
+            <p>We look forward to earning your business!</p>
+            <a href="tel:(541) 602-0831" class="cta-button">Call Today!</a>
+        </div>
     </section>
-  </main>
 </body>
-
 </html>

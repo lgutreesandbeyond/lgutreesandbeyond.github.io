@@ -1,52 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/styles/styles.css" />
-  <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <title>Contact Us - L. Gu Trees and Beyond</title>
 </head>
-
 <body>
-  <script src="/scripts/hamburger.js"></script>
-  <nav class="topnav" id="navbar">
-    <div id="navbar-links-container">
-      <a href="/index.html">Home</a>
-
-      <a href="/pages/contact.html" class="active">Contact</a>
-      <a href="/pages/about.html">About</a>
-
-      <a href="javascript:void(0);" class="icon" onclick="hamburgerDropdown()">&#9776;</a>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">
+            <img src="/assets/lGuLogo.png" alt="L. Gu Trees and Beyond" class="nav-logo">
+        </div>
+        <button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">
+            <span class="hamburger"></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+            <div class="nav-links">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/index.html#services" class="nav-link">Services</a>
+                <a href="/pages/contact.html" class="nav-link active">Contact</a>
+                <a href="/pages/about.html" class="nav-link">About Us</a>
+            </div>
+            <a href="tel:(541) 602-0831" class="nav-cta">
+                  (541) 602-0831
+            </a>
+        </div>
     </div>
-  </nav>
-  <section class="form-section">
-    <span class="title">
-      Send us a Message!
-    </span>
-    <span class="phone-number-label">
-      Or give us a call at:
-      <a class="phone-number" href="tel:(541) 602-0831">
-        (541) 602-0831
-      </a>
-    </span>
-      <form action="https://formsubmit.co/lgutreesandbeyond@gmail.com" method="POST">
-        <input type="hidden" name="_next" value="http://www.lgutreesandbeyond.com/pages/thank-you.html" />
-        <input type="hidden" name="_subject" value="New Message from lgutreesandbeyond.com!">
-        <!-- next line disable recaptcha -->
-        <input type="hidden" name="_captcha" value="false">
-        <!-- this honeypot keeps scrapers from spamming - if this input has data, form will not send -->
-        <input type="text" name="_honey" style="display:none">
+</nav>
 
-        <input name="name" type="text" class="feedback-input" placeholder="Name (required)" required />
-        <input name="number" type="tel" class="feedback-input" placeholder="Phone # (required)" required />
-        <input name="mail" type="email" class="feedback-input" placeholder="Email (optional)" />
-        <textarea name="text" class="feedback-input" placeholder="Comment (required)" required></textarea>
-        <input type="submit" value="SUBMIT" />
-      </form>
-  </section>
+    <section class="contact-hero">
+        <div class="contact-content">
+            <h1>Get In Touch</h1>
+            <p>We're here to help with all your landscaping needs</p>
+        </div>
+    </section>
 
+    <section class="contact-grid">
+        <div class="contact-info">
+            <div class="info-card">
+                <h3>Call or Text</h3>
+                <a href="tel:(541) 602-0831" class="contact-link">
+                    (541) 602-0831
+                </a>
+            </div>
+            <div class="info-card">
+                <h3>Service Area</h3>
+                <p>Corvallis, Oregon and surrounding areas</p>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <!-- send to lgutreesandbeyond@gmail -->
+              <input type="hidden" name="access_key" value="b47a1312-6527-45ad-ae82-32d71764e1e1">
+        
+              <div class="form-group">
+                <input name="name" type="text" class="feedback-input" placeholder="Name (required)" required />
+                
+              </div>
+              <div class="form-group">
+                
+                <input name="number" type="tel" class="feedback-input" placeholder="Phone # (required)" required />
+              </div>
+              <div class="form-group">
+                
+                <input name="email" type="email" class="feedback-input" placeholder="Email (optional)" />
+              </div>
+              <div class="form-group">
+                
+                <textarea name="text" class="feedback-input" placeholder="Comment (required)" required></textarea>
+              </div>
+          
+              <!-- Honeypot Spam Protection -->
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+              <!-- Custom Confirmation / Success Page -->
+              <input type="hidden" name="redirect" value="http://www.lgutreesandbeyond.com/pages/thank-you.html">
+          
+              <!-- <input type="submit" value="SUBMIT" /> -->
+              <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 L. Gu Trees and Beyond LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="/scripts/scripts.js"></script>
 </body>
-
 </html>
