@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="styles/styles.css" /> -->
-    <!-- <link rel="stylesheet" href="styles/thank-you.css" /> -->
-    <meta http-equiv="refresh" content="3;url=https://www.lgutreesandbeyond.com/" />
-    <title>Thank You!</title>
-</head>
-
-<body>
-    <style>
-        body {
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -54,13 +39,3 @@ p {
         transform: translateY(0);
     }
 }
-    </style>
-    <div class="thank-you-container">
-        <h1>Thank You!</h1>
-        <p>We appreciate your trust in L. Gu Trees and Beyond.</p>
-        <p>Redirecting you to the homepage...</p>
-    </div>
-</body>
-
-</html>
-
