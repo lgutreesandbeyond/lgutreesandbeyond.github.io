@@ -29,9 +29,11 @@ body {
   background: rgba(30, 30, 40, 0.95);
   backdrop-filter: blur(10px);
 }
+
 .phone-icon {
   transform: scale(0.25);
 }
+
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -186,13 +188,18 @@ footer {
   background: rgba(0, 0, 0, 0.2);
   padding: 3rem 2rem;
   margin-top: 4rem;
+  text-align: center;
+  line-height: 1.5;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
   gap: 2rem;
 }
 
@@ -205,6 +212,17 @@ footer {
   color: var(--secondary);
   text-decoration: none;
   font-size: 1.25rem;
+}
+
+.footer-info > p#license {
+  text-decoration: none;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+
+
 }
 
 .copyright {
@@ -222,61 +240,61 @@ footer {
 
 @media (max-width: 768px) {
   .nav-toggle {
-      display: block;
-      background: none;
-      border: none;
-      padding: 0.5rem;
-      cursor: pointer;
+    display: block;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
   }
 
   .hamburger,
   .hamburger::before,
   .hamburger::after {
-      content: '';
-      display: block;
-      background: var(--light);
-      height: 2px;
-      width: 24px;
-      transition: var(--transition);
+    content: '';
+    display: block;
+    background: var(--light);
+    height: 2px;
+    width: 24px;
+    transition: var(--transition);
   }
 
   .hamburger::before {
-      transform: translateY(-6px);
+    transform: translateY(-6px);
   }
 
   .hamburger::after {
-      transform: translateY(4px);
+    transform: translateY(4px);
   }
 
   .nav-menu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background: rgba(30, 30, 40, 0.95);
-      padding: 1rem;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(30, 30, 40, 0.95);
+    padding: 1rem;
   }
 
   .nav-menu.active {
-      display: block;
+    display: block;
   }
 
   .nav-links {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .nav-cta {
-      margin-top: 1rem;
-      justify-content: center;
+    margin-top: 1rem;
+    justify-content: center;
   }
 
   .hero h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .hero-cta {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
