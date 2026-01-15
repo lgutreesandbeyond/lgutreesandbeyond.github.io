@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.toggle('active');
         navToggle.classList.toggle('active');
     }
-
+    
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
         if (!navbar.contains(e.target) && navMenu.classList.contains('active')) {
             toggleNav();
         }
     });
-
+    
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
+    
     // Navbar scroll behavior
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
@@ -51,7 +51,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         lastScroll = currentScroll;
     });
-
+    
     // Make nav toggle available globally
     window.toggleNav = toggleNav;
 });
+
+const setCopyright = () => {
+    const copyright = document.getElementById('copyright');
+    if (copyright) {
+        const currentYear = new Date().getFullYear();
+        copyright.textContent = `© ${currentYear} L. Gu Trees and Beyond LLC. All rights reserved.`;
+    }
+}
+setCopyright();
